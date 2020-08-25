@@ -65,20 +65,25 @@ print(list)
 # some methods change the object it is called on and some do not.
 
 #numpy arrays
-new_list = np.array([ 1, 2, 3])
+#new_list = np.array([ 1, 2, 3])
 
-new_list[new_list < 2] # array of [1]
+#new_list[new_list < 2] # array of [1]
 #numpy assumes a single type in the whole array
 # you can multipy a np array by a scalar
-light =bmi < 21 # a boolean array
+#light =bmi < 21 # a boolean array
 
-print(bmi[light]) # the array of floats
+#print(bmi[light]) # the array of floats
 
 # attributes do not have round brackets. Methods do.
 
 #there are many ways to subset numpy arrays
-list[0][2]
-list[0,2]
-list[1,:]
+list[1][1]
+
+
+import numpy as np
+np_list = np.array(list)
+np_list[1]
+print(np_list.size)
+print(np_list)
 
 
